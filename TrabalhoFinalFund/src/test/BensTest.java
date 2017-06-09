@@ -25,6 +25,6 @@ public class BensTest {
 		assertEquals("completa", bem.getDescricaoCompleta());
 		assertEquals("categ", bem.getCategoria());
 	
-	
+	}
 
 }
