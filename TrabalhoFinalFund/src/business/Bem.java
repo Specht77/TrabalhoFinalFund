@@ -1,12 +1,12 @@
 package business;
 
-public class Bens {
+public class Bem {
 
 	private String descricaoBreve;
 	private String descricaoCompleta;
 	private String categoria;
 	
-	public Bens(String descricaoBreve, String descricaoCompleta, String categoria){
+	public Bem(String descricaoBreve, String descricaoCompleta, String categoria){
 		this.descricaoBreve = descricaoBreve;
 		this.descricaoCompleta = descricaoCompleta;
 		this.categoria = categoria;
