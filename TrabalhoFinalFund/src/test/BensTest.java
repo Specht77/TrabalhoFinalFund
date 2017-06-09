@@ -20,11 +20,38 @@ public class BensTest {
 		
 	}
 	@Test
-	public void CoordenadasConstrutorTest() {
+	public void BensConstructorTest() {
 		assertEquals("breve", bem.getDescricaoBreve());
 		assertEquals("completa", bem.getDescricaoCompleta());
 		assertEquals("categ", bem.getCategoria());
 	
 	}
+	@Test
+	public void setDescricaoBreveTest(){
+		bem.setDescricaoBreve("test1");
+		assertEquals("test1", bem.getDescricaoBreve());
+		
+		bem.setDescricaoBreve("test2");
+		assertEquals("test2", bem.getDescricaoBreve());
+		
+		bem.setDescricaoBreve("test2");
+		assertEquals("test2", bem.getDescricaoBreve());
+	}
+	@Test
+	public void setDescricaoCompletaTest(){
+		bem.setDescricaoCompleta("test1");
+		assertEquals("test1", bem.getDescricaoCompleta());
+		
+		bem.setDescricaoCompleta("test2");
+		assertEquals("test2", bem.getDescricaoCompleta());
+		
+		bem.setDescricaoCompleta("test2");
+		assertEquals("test2", bem.getDescricaoCompleta());
+	}
 
+	
+	
+	
+	
+	
 }
