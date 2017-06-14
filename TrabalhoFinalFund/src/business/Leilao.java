@@ -4,14 +4,16 @@ import java.util.Date;
 
 public class Leilao {
 	
+	private boolean natureza;
 	private boolean formato;
 	private Date abertura;
 	private Date fechamento;
 	
-	public Leilao(boolean formato, Date abertura, Date fechamento){
+	public Leilao(boolean natureza, boolean formato, Date abertura, Date fechamento){
 		this.formato = formato;
 		this.abertura = abertura;
 		this.fechamento = fechamento;
+		this.natureza = natureza;
 	}
 
 	
@@ -41,6 +43,16 @@ public class Leilao {
 	
 	public Date getFechamento(){
 		return fechamento;
+	}
+
+
+	public boolean getNatureza() {
+		return natureza;
+	}
+
+
+	public void setNatureza(boolean natureza) {
+		this.natureza = natureza;
 	}
 	
 }
