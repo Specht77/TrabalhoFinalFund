@@ -5,11 +5,13 @@ import java.util.Date;
 public class Leilao {
 	
 	private boolean formato;
-	private Date dataAbertura;
+	private Date abertura;
+	private Date fechamento;
 	
-	public Leilao(boolean formato, Date dataAbertura){
+	public Leilao(boolean formato, Date abertura, Date fechamento){
 		this.formato = formato;
-		this.dataAbertura = dataAbertura;
+		this.abertura = abertura;
+		this.fechamento = fechamento;
 	}
 
 	
@@ -23,8 +25,22 @@ public class Leilao {
 		return formato;
 	}
 	
+	public void setAbertura(Date abertura){
+		this.abertura = abertura;
+	}
 	
 	
+	public Date getAbertura(){
+		return abertura;
+	}
+
 	
+	public void setFechamento(Date fechamento){
+		this.fechamento = fechamento;
+	}
+	
+	public Date getFechamento(){
+		return fechamento;
+	}
 	
 }
