@@ -7,6 +7,7 @@ import javax.swing.JLabel;
 import java.awt.Font;
 import javax.swing.JTextArea;
 import javax.swing.JComboBox;
+import javax.swing.JButton;
 
 public class TelaCadBens {
 
@@ -76,5 +77,15 @@ public class TelaCadBens {
 		JComboBox CmbBoxCateg = new JComboBox();
 		CmbBoxCateg.setBounds(12, 406, 532, 22);
 		frame.getContentPane().add(CmbBoxCateg);
+		
+		JButton btnConfirmar = new JButton("Confirmar");
+		btnConfirmar.setFont(new Font("Tahoma", Font.PLAIN, 20));
+		btnConfirmar.setBounds(12, 469, 143, 25);
+		frame.getContentPane().add(btnConfirmar);
+		
+		JButton btnCancelar = new JButton("Cancelar");
+		btnCancelar.setFont(new Font("Tahoma", Font.PLAIN, 20));
+		btnCancelar.setBounds(401, 469, 143, 25);
+		frame.getContentPane().add(btnCancelar);
 	}
 }
