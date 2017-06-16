@@ -2,21 +2,25 @@ package business;
 
 public class Lote {
 	
-	private int valorMinimo;
+	private int valorLimite; 
+	/* Pode ser valor MINIMO ou MAXIMO conforme Leilão DEMANDA ou OFERTA:
+	 * " todo leilão possui um preço (mínimo ou máximo) associado ao lote."
+	 * */
 	
-	public Lote(int valorMinimo){
-		this.valorMinimo = valorMinimo;
-		
+	
+	Bem bem; 
+	
+	public Lote(int valorLimite, Bem bem){
+		this.valorLimite = valorLimite;
+		this.bem = bem;
 	}
 	
-	
-	
-	public void setValorMinimo(int valorMinimo){
-		this.valorMinimo = valorMinimo;
+	public void setValorLimite(int valorLimite){
+		this.valorLimite = valorLimite;
 	}
 	
-	public int getValorMinimo(){
-		return valorMinimo;
+	public int getValorLimite(){
+		return valorLimite;
 	}
 
 }
