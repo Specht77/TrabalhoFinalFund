@@ -4,7 +4,7 @@ public class Bem {
 
 	private String descricaoBreve;
 	private String descricaoCompleta;
-	private String categoria;
+	private String categoria; //criar 5~6 categorias pré prontas
 	
 	public Bem(String descricaoBreve, String descricaoCompleta, String categoria){
 		this.descricaoBreve = descricaoBreve;
