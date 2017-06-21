@@ -13,9 +13,9 @@ import java.awt.event.ActionEvent;
 public class TelaCadUsu {
 
 	private JFrame frame;
-	private JTextField textField;
-	private JTextField textField_1;
-	private JTextField textField_2;
+	private JTextField TxrFNome;
+	private JTextField TxtFCPF;
+	private JTextField TxtFEmail;
 
 	/**
 	 * Launch the application.
@@ -59,32 +59,32 @@ public class TelaCadUsu {
 		lblCadastroDeUsurio.setBounds(149, 26, 243, 31);
 		frame.getContentPane().add(lblCadastroDeUsurio);
 		
-		textField = new JTextField();
-		textField.setFont(new Font("Tahoma", Font.PLAIN, 20));
-		textField.setBounds(95, 100, 376, 22);
-		frame.getContentPane().add(textField);
-		textField.setColumns(10);
+		TxrFNome = new JTextField();
+		TxrFNome.setFont(new Font("Tahoma", Font.PLAIN, 20));
+		TxrFNome.setBounds(95, 100, 376, 22);
+		frame.getContentPane().add(TxrFNome);
+		TxrFNome.setColumns(10);
 		
 		JLabel lblCPFCNPJ = new JLabel("CPF / CNPJ:");
 		lblCPFCNPJ.setFont(new Font("Tahoma", Font.PLAIN, 20));
 		lblCPFCNPJ.setBounds(23, 158, 119, 16);
 		frame.getContentPane().add(lblCPFCNPJ);
 		
-		textField_1 = new JTextField();
-		textField_1.setFont(new Font("Tahoma", Font.PLAIN, 20));
-		textField_1.setBounds(130, 155, 341, 22);
-		frame.getContentPane().add(textField_1);
-		textField_1.setColumns(10);
+		TxtFCPF = new JTextField();
+		TxtFCPF.setFont(new Font("Tahoma", Font.PLAIN, 20));
+		TxtFCPF.setBounds(130, 155, 341, 22);
+		frame.getContentPane().add(TxtFCPF);
+		TxtFCPF.setColumns(10);
 		
 		JLabel lblEmail = new JLabel("E-mail:");
 		lblEmail.setFont(new Font("Tahoma", Font.PLAIN, 20));
 		lblEmail.setBounds(23, 204, 71, 22);
 		frame.getContentPane().add(lblEmail);
 		
-		textField_2 = new JTextField();
-		textField_2.setBounds(95, 207, 376, 22);
-		frame.getContentPane().add(textField_2);
-		textField_2.setColumns(10);
+		TxtFEmail = new JTextField();
+		TxtFEmail.setBounds(95, 207, 376, 22);
+		frame.getContentPane().add(TxtFEmail);
+		TxtFEmail.setColumns(10);
 		
 		JButton btnConfirmar = new JButton("Confirmar");
 		btnConfirmar.addActionListener(new ActionListener() {
