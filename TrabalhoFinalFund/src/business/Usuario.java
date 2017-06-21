@@ -32,7 +32,7 @@ public class Usuario {
 		return cpfcnpj;
 	}
 	
-	public String email(){
+	public String getEmail() {
 		return email;
 	}
 	

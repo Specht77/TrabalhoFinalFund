@@ -1,5 +1,7 @@
 package business;
 
-public class CadastroLeilaoDAO {
+import persistance.CadastroDAOException;
 
+public class CadastroLeilaoDAO {
+//	boolean adicionar(Leilao leilao) throws CadastroDAOException;
 }
