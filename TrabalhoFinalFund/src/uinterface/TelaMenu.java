@@ -8,6 +8,7 @@ import javax.swing.JButton;
 import java.awt.Font;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
+import javax.swing.JLabel;
 
 public class TelaMenu {
 
@@ -84,5 +85,10 @@ public class TelaMenu {
 		btnVisualizarLeiles.setFont(new Font("Tahoma", Font.PLAIN, 25));
 		btnVisualizarLeiles.setBounds(70, 347, 300, 45);
 		frame.getContentPane().add(btnVisualizarLeiles);
+		
+		JLabel lblMenu = new JLabel("MENU");
+		lblMenu.setFont(new Font("Tahoma", Font.PLAIN, 25));
+		lblMenu.setBounds(169, 13, 109, 36);
+		frame.getContentPane().add(lblMenu);
 	}
 }
