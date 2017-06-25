@@ -78,6 +78,7 @@ public class TelaCadLeilao {
 		frame.getContentPane().add(rdbtnDemanda);
 		
 		JList listBens = new JList();
+		listBens.setFont(new Font("Tahoma", Font.PLAIN, 15));
 		listBens.setBounds(29, 89, 611, 106);
 		frame.getContentPane().add(listBens);
 		
@@ -87,7 +88,8 @@ public class TelaCadLeilao {
 		frame.getContentPane().add(lblData);
 		
 		textData = new JTextField();
-		textData.setBounds(88, 306, 116, 22);
+		textData.setFont(new Font("Tahoma", Font.PLAIN, 15));
+		textData.setBounds(97, 305, 132, 23);
 		frame.getContentPane().add(textData);
 		textData.setColumns(10);
 		
@@ -97,8 +99,9 @@ public class TelaCadLeilao {
 		frame.getContentPane().add(lblHora);
 		
 		textHora = new JTextField();
+		textHora.setFont(new Font("Tahoma", Font.PLAIN, 15));
 		textHora.setText("");
-		textHora.setBounds(398, 306, 116, 22);
+		textHora.setBounds(405, 304, 132, 25);
 		frame.getContentPane().add(textHora);
 		textHora.setColumns(10);
 		
