@@ -57,6 +57,7 @@ public class TelaCadBens {
 		frame.getContentPane().add(lblDescrioBreve);
 		
 		JTextArea txtADescrBrev = new JTextArea();
+		txtADescrBrev.setFont(new Font("Monospaced", Font.PLAIN, 15));
 		txtADescrBrev.setBounds(12, 97, 532, 74);
 		frame.getContentPane().add(txtADescrBrev);
 		
@@ -66,6 +67,7 @@ public class TelaCadBens {
 		frame.getContentPane().add(lblDescrioCompleta);
 		
 		JTextArea TxtADescComp = new JTextArea();
+		TxtADescComp.setFont(new Font("Tahoma", Font.PLAIN, 15));
 		TxtADescComp.setBounds(12, 222, 532, 127);
 		frame.getContentPane().add(TxtADescComp);
 		
@@ -75,6 +77,7 @@ public class TelaCadBens {
 		frame.getContentPane().add(lblCategoria);
 		
 		JComboBox CmbBoxCateg = new JComboBox();
+		CmbBoxCateg.setFont(new Font("Tahoma", Font.PLAIN, 15));
 		CmbBoxCateg.setBounds(12, 406, 532, 22);
 		frame.getContentPane().add(CmbBoxCateg);
 		
