@@ -53,10 +53,10 @@ public class TelaLeilaoFinalizado {
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.getContentPane().setLayout(null);
 		
-		JLabel lblLeilesFinalizados = new JLabel("Leil\u00F5es Finalizados");
-		lblLeilesFinalizados.setFont(new Font("Tahoma", Font.PLAIN, 25));
-		lblLeilesFinalizados.setBounds(182, 0, 248, 50);
-		frame.getContentPane().add(lblLeilesFinalizados);
+		JLabel lblLeiloesFinalizados = new JLabel("Leil\u00F5es Finalizados");
+		lblLeiloesFinalizados.setFont(new Font("Tahoma", Font.PLAIN, 25));
+		lblLeiloesFinalizados.setBounds(182, 0, 248, 50);
+		frame.getContentPane().add(lblLeiloesFinalizados);
 		
 		JLabel lblNewLabel = new JLabel("Cod:");
 		lblNewLabel.setFont(new Font("Tahoma", Font.PLAIN, 20));
@@ -123,10 +123,10 @@ public class TelaLeilaoFinalizado {
 		txtBens.setBounds(23, 212, 509, 88);
 		frame.getContentPane().add(txtBens);
 		
-		JLabel lblUsurio = new JLabel("Usu\u00E1rio:");
-		lblUsurio.setFont(new Font("Tahoma", Font.PLAIN, 20));
-		lblUsurio.setBounds(23, 313, 74, 16);
-		frame.getContentPane().add(lblUsurio);
+		JLabel lblUsaurio = new JLabel("Usu\u00E1rio:");
+		lblUsaurio.setFont(new Font("Tahoma", Font.PLAIN, 20));
+		lblUsaurio.setBounds(23, 313, 74, 16);
+		frame.getContentPane().add(lblUsaurio);
 		
 		txtUsuario = new JTextField();
 		txtUsuario.setFont(new Font("Tahoma", Font.PLAIN, 15));

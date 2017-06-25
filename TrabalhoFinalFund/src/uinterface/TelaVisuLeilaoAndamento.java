@@ -47,15 +47,15 @@ public class TelaVisuLeilaoAndamento {
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.getContentPane().setLayout(null);
 		
-		JLabel lblVisualizarLeiloEm = new JLabel("Visualizar Leil\u00E3o em Andamento");
-		lblVisualizarLeiloEm.setFont(new Font("Tahoma", Font.PLAIN, 25));
-		lblVisualizarLeiloEm.setBounds(116, 13, 395, 31);
-		frame.getContentPane().add(lblVisualizarLeiloEm);
+		JLabel lblVisualizarLeilao = new JLabel("Visualizar Leil\u00E3o em Andamento");
+		lblVisualizarLeilao.setFont(new Font("Tahoma", Font.PLAIN, 25));
+		lblVisualizarLeilao.setBounds(116, 13, 395, 31);
+		frame.getContentPane().add(lblVisualizarLeilao);
 		
-		JLabel lblLeiles = new JLabel("Leil\u00F5es:");
-		lblLeiles.setFont(new Font("Tahoma", Font.PLAIN, 20));
-		lblLeiles.setBounds(30, 76, 104, 16);
-		frame.getContentPane().add(lblLeiles);
+		JLabel lblLeilao = new JLabel("Leil\u00E3o:");
+		lblLeilao.setFont(new Font("Tahoma", Font.PLAIN, 20));
+		lblLeilao.setBounds(30, 76, 104, 16);
+		frame.getContentPane().add(lblLeilao);
 		
 		JRadioButton rdbtnFechado = new JRadioButton("Fechado");
 		rdbtnFechado.setFont(new Font("Tahoma", Font.PLAIN, 20));
@@ -82,10 +82,10 @@ public class TelaVisuLeilaoAndamento {
 		rdbtnOferta.setBounds(295, 119, 127, 25);
 		frame.getContentPane().add(rdbtnOferta);
 		
-		JLabel lblLeilesEmAndamento = new JLabel("Leil\u00F5es em Andamento:");
-		lblLeilesEmAndamento.setFont(new Font("Tahoma", Font.PLAIN, 20));
-		lblLeilesEmAndamento.setBounds(30, 157, 232, 16);
-		frame.getContentPane().add(lblLeilesEmAndamento);
+		JLabel lblLeiloesEmAndamento = new JLabel("Leil\u00F5es em Andamento:");
+		lblLeiloesEmAndamento.setFont(new Font("Tahoma", Font.PLAIN, 20));
+		lblLeiloesEmAndamento.setBounds(30, 157, 232, 16);
+		frame.getContentPane().add(lblLeiloesEmAndamento);
 		
 		JTextArea txtLeilaoAndamento = new JTextArea();
 		txtLeilaoAndamento.setFont(new Font("Tahoma", Font.PLAIN, 15));

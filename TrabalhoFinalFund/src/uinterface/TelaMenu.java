@@ -46,25 +46,25 @@ public class TelaMenu {
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.getContentPane().setLayout(null);
 		
-		JButton btnCadastrarUsurio = new JButton("Cadastrar Usu\u00E1rio");
-		btnCadastrarUsurio.addActionListener(new ActionListener() {
+		JButton btnCadastrarUsuario = new JButton("Cadastrar Usu\u00E1rio");
+		btnCadastrarUsuario.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
 				
 			}
 		});
-		btnCadastrarUsurio.setFont(new Font("Tahoma", Font.PLAIN, 25));
-		btnCadastrarUsurio.setBounds(70, 76, 300, 45);
-		frame.getContentPane().add(btnCadastrarUsurio);
+		btnCadastrarUsuario.setFont(new Font("Tahoma", Font.PLAIN, 25));
+		btnCadastrarUsuario.setBounds(70, 76, 300, 45);
+		frame.getContentPane().add(btnCadastrarUsuario);
 		
-		JButton btnCadastrarLeilo = new JButton("Cadastrar Leil\u00E3o");
-		btnCadastrarLeilo.addActionListener(new ActionListener() {
+		JButton btnCadastrarLeilao = new JButton("Cadastrar Leil\u00E3o");
+		btnCadastrarLeilao.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				
 			}
 		});
-		btnCadastrarLeilo.setFont(new Font("Tahoma", Font.PLAIN, 25));
-		btnCadastrarLeilo.setBounds(70, 167, 300, 45);
-		frame.getContentPane().add(btnCadastrarLeilo);
+		btnCadastrarLeilao.setFont(new Font("Tahoma", Font.PLAIN, 25));
+		btnCadastrarLeilao.setBounds(70, 167, 300, 45);
+		frame.getContentPane().add(btnCadastrarLeilao);
 		
 		JButton btnCadastrarBens = new JButton("Cadastrar Bens");
 		btnCadastrarBens.addActionListener(new ActionListener() {
@@ -76,15 +76,15 @@ public class TelaMenu {
 		btnCadastrarBens.setBounds(70, 260, 300, 45);
 		frame.getContentPane().add(btnCadastrarBens);
 		
-		JButton btnVisualizarLeiles = new JButton("Visualizar Leil\u00F5es");
-		btnVisualizarLeiles.addActionListener(new ActionListener() {
+		JButton btnVisualizarLeiloes = new JButton("Visualizar Leil\u00F5es");
+		btnVisualizarLeiloes.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				
 			}
 		});
-		btnVisualizarLeiles.setFont(new Font("Tahoma", Font.PLAIN, 25));
-		btnVisualizarLeiles.setBounds(70, 347, 300, 45);
-		frame.getContentPane().add(btnVisualizarLeiles);
+		btnVisualizarLeiloes.setFont(new Font("Tahoma", Font.PLAIN, 25));
+		btnVisualizarLeiloes.setBounds(70, 347, 300, 45);
+		frame.getContentPane().add(btnVisualizarLeiloes);
 		
 		JLabel lblMenu = new JLabel("MENU");
 		lblMenu.setFont(new Font("Tahoma", Font.PLAIN, 25));

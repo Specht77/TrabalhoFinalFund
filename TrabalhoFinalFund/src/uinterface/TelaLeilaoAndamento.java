@@ -56,10 +56,10 @@ public class TelaLeilaoAndamento {
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.getContentPane().setLayout(null);
 		
-		JLabel lblLeiloEmAndamento = new JLabel("Leil\u00E3o em Andamento");
-		lblLeiloEmAndamento.setFont(new Font("Tahoma", Font.PLAIN, 25));
-		lblLeiloEmAndamento.setBounds(155, 13, 289, 31);
-		frame.getContentPane().add(lblLeiloEmAndamento);
+		JLabel lblLeilaoEmAndamento = new JLabel("Leil\u00E3o em Andamento");
+		lblLeilaoEmAndamento.setFont(new Font("Tahoma", Font.PLAIN, 25));
+		lblLeilaoEmAndamento.setBounds(155, 13, 289, 31);
+		frame.getContentPane().add(lblLeilaoEmAndamento);
 		
 		JLabel lblCod = new JLabel("Cod:");
 		lblCod.setFont(new Font("Tahoma", Font.PLAIN, 20));
@@ -126,10 +126,10 @@ public class TelaLeilaoAndamento {
 		textBens.setBounds(42, 198, 499, 84);
 		frame.getContentPane().add(textBens);
 		
-		JLabel lblUsurio = new JLabel("Usu\u00E1rio:");
-		lblUsurio.setFont(new Font("Tahoma", Font.PLAIN, 20));
-		lblUsurio.setBounds(42, 295, 81, 16);
-		frame.getContentPane().add(lblUsurio);
+		JLabel lblUsaurio = new JLabel("Usu\u00E1rio:");
+		lblUsaurio.setFont(new Font("Tahoma", Font.PLAIN, 20));
+		lblUsaurio.setBounds(42, 295, 81, 16);
+		frame.getContentPane().add(lblUsaurio);
 		
 		textUsu = new JTextField();
 		textUsu.setFont(new Font("Tahoma", Font.PLAIN, 15));

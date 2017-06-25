@@ -52,10 +52,10 @@ public class TelaCadLeilao {
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.getContentPane().setLayout(null);
 		
-		JLabel lblCadastroDe = new JLabel("Cadastro de Leil\u00E3o");
-		lblCadastroDe.setFont(new Font("Tahoma", Font.PLAIN, 25));
-		lblCadastroDe.setBounds(216, 13, 278, 40);
-		frame.getContentPane().add(lblCadastroDe);
+		JLabel lblCadastroLeilao = new JLabel("Cadastro de Leil\u00E3o");
+		lblCadastroLeilao.setFont(new Font("Tahoma", Font.PLAIN, 25));
+		lblCadastroLeilao.setBounds(216, 13, 278, 40);
+		frame.getContentPane().add(lblCadastroLeilao);
 		
 		JLabel lblBens = new JLabel("Bens:");
 		lblBens.setFont(new Font("Tahoma", Font.PLAIN, 20));
@@ -69,12 +69,12 @@ public class TelaCadLeilao {
 		
 		JRadioButton rdbtnOferta = new JRadioButton("Oferta");
 		rdbtnOferta.setFont(new Font("Tahoma", Font.PLAIN, 20));
-		rdbtnOferta.setBounds(29, 250, 127, 25);
+		rdbtnOferta.setBounds(142, 208, 127, 25);
 		frame.getContentPane().add(rdbtnOferta);
 		
 		JRadioButton rdbtnDemanda = new JRadioButton("Demanda");
 		rdbtnDemanda.setFont(new Font("Tahoma", Font.PLAIN, 20));
-		rdbtnDemanda.setBounds(160, 250, 127, 25);
+		rdbtnDemanda.setBounds(294, 208, 127, 25);
 		frame.getContentPane().add(rdbtnDemanda);
 		
 		JList listBens = new JList();
@@ -125,17 +125,17 @@ public class TelaCadLeilao {
 		
 		JLabel lblLances = new JLabel("Lances:");
 		lblLances.setFont(new Font("Tahoma", Font.PLAIN, 20));
-		lblLances.setBounds(343, 223, 95, 18);
+		lblLances.setBounds(29, 253, 95, 18);
 		frame.getContentPane().add(lblLances);
 		
 		JRadioButton rdbtnAbertos = new JRadioButton("Abertos");
 		rdbtnAbertos.setFont(new Font("Tahoma", Font.PLAIN, 20));
-		rdbtnAbertos.setBounds(343, 250, 127, 25);
+		rdbtnAbertos.setBounds(142, 250, 127, 25);
 		frame.getContentPane().add(rdbtnAbertos);
 		
 		JRadioButton rdbtnFechado = new JRadioButton("Fechado");
 		rdbtnFechado.setFont(new Font("Tahoma", Font.PLAIN, 20));
-		rdbtnFechado.setBounds(468, 250, 127, 25);
+		rdbtnFechado.setBounds(294, 250, 127, 25);
 		frame.getContentPane().add(rdbtnFechado);
 	}
 }

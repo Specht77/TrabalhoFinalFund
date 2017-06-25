@@ -51,20 +51,20 @@ public class TelaCadBens {
 		lblCadastroDeBens.setBounds(182, 13, 235, 31);
 		frame.getContentPane().add(lblCadastroDeBens);
 		
-		JLabel lblDescrioBreve = new JLabel("Descri\u00E7\u00E3o Breve");
-		lblDescrioBreve.setFont(new Font("Tahoma", Font.PLAIN, 20));
-		lblDescrioBreve.setBounds(12, 68, 143, 16);
-		frame.getContentPane().add(lblDescrioBreve);
+		JLabel lblDescricaoBreve = new JLabel("Descri\u00E7\u00E3o Breve");
+		lblDescricaoBreve.setFont(new Font("Tahoma", Font.PLAIN, 20));
+		lblDescricaoBreve.setBounds(12, 60, 143, 25);
+		frame.getContentPane().add(lblDescricaoBreve);
 		
 		JTextArea txtADescrBrev = new JTextArea();
 		txtADescrBrev.setFont(new Font("Monospaced", Font.PLAIN, 15));
 		txtADescrBrev.setBounds(12, 97, 532, 74);
 		frame.getContentPane().add(txtADescrBrev);
 		
-		JLabel lblDescrioCompleta = new JLabel("Descri\u00E7\u00E3o Completa");
-		lblDescrioCompleta.setFont(new Font("Tahoma", Font.PLAIN, 20));
-		lblDescrioCompleta.setBounds(12, 184, 183, 25);
-		frame.getContentPane().add(lblDescrioCompleta);
+		JLabel lblDescricaoCompleta = new JLabel("Descri\u00E7\u00E3o Completa");
+		lblDescricaoCompleta.setFont(new Font("Tahoma", Font.PLAIN, 20));
+		lblDescricaoCompleta.setBounds(12, 184, 183, 25);
+		frame.getContentPane().add(lblDescricaoCompleta);
 		
 		JTextArea TxtADescComp = new JTextArea();
 		TxtADescComp.setFont(new Font("Tahoma", Font.PLAIN, 15));

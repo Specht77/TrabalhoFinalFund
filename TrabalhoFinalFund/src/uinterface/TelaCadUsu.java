@@ -54,10 +54,10 @@ public class TelaCadUsu {
 		lblNome.setBounds(23, 103, 71, 16);
 		frame.getContentPane().add(lblNome);
 		
-		JLabel lblCadastroDeUsurio = new JLabel("Cadastro de Usu\u00E1rio");
-		lblCadastroDeUsurio.setFont(new Font("Tahoma", Font.PLAIN, 25));
-		lblCadastroDeUsurio.setBounds(149, 26, 243, 31);
-		frame.getContentPane().add(lblCadastroDeUsurio);
+		JLabel lblCadastroDeUsaurio = new JLabel("Cadastro de Usu\u00E1rio");
+		lblCadastroDeUsaurio.setFont(new Font("Tahoma", Font.PLAIN, 25));
+		lblCadastroDeUsaurio.setBounds(149, 26, 243, 31);
+		frame.getContentPane().add(lblCadastroDeUsaurio);
 		
 		TxrFNome = new JTextField();
 		TxrFNome.setFont(new Font("Tahoma", Font.PLAIN, 15));
