@@ -60,7 +60,7 @@ public class TelaCadUsu {
 		frame.getContentPane().add(lblCadastroDeUsurio);
 		
 		TxrFNome = new JTextField();
-		TxrFNome.setFont(new Font("Tahoma", Font.PLAIN, 20));
+		TxrFNome.setFont(new Font("Tahoma", Font.PLAIN, 15));
 		TxrFNome.setBounds(95, 100, 376, 22);
 		frame.getContentPane().add(TxrFNome);
 		TxrFNome.setColumns(10);
@@ -71,7 +71,7 @@ public class TelaCadUsu {
 		frame.getContentPane().add(lblCPFCNPJ);
 		
 		TxtFCPF = new JTextField();
-		TxtFCPF.setFont(new Font("Tahoma", Font.PLAIN, 20));
+		TxtFCPF.setFont(new Font("Tahoma", Font.PLAIN, 15));
 		TxtFCPF.setBounds(130, 155, 341, 22);
 		frame.getContentPane().add(TxtFCPF);
 		TxtFCPF.setColumns(10);
@@ -82,6 +82,7 @@ public class TelaCadUsu {
 		frame.getContentPane().add(lblEmail);
 		
 		TxtFEmail = new JTextField();
+		TxtFEmail.setFont(new Font("Tahoma", Font.PLAIN, 15));
 		TxtFEmail.setBounds(95, 207, 376, 22);
 		frame.getContentPane().add(TxtFEmail);
 		TxtFEmail.setColumns(10);
