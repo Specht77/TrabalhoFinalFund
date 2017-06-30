@@ -19,6 +19,9 @@ public class TelaCadLeilao {
 	private JFrame frame;
 	private JTextField textData;
 	private JTextField textHora;
+	private JTextField TxtDtFinal;
+	private JTextField txtHrFinal;
+	private JTextField txtBens;
 
 	/**
 	 * Launch the application.
@@ -82,26 +85,26 @@ public class TelaCadLeilao {
 		listBens.setBounds(29, 89, 611, 106);
 		frame.getContentPane().add(listBens);
 		
-		JLabel lblData = new JLabel("Data:");
+		JLabel lblData = new JLabel("Data Inicio:");
 		lblData.setFont(new Font("Tahoma", Font.PLAIN, 20));
-		lblData.setBounds(29, 306, 56, 16);
+		lblData.setBounds(29, 306, 105, 16);
 		frame.getContentPane().add(lblData);
 		
 		textData = new JTextField();
 		textData.setFont(new Font("Tahoma", Font.PLAIN, 15));
-		textData.setBounds(97, 305, 132, 23);
+		textData.setBounds(142, 305, 132, 23);
 		frame.getContentPane().add(textData);
 		textData.setColumns(10);
 		
-		JLabel lblHora = new JLabel("Hora:");
+		JLabel lblHora = new JLabel("Hora Inicio:");
 		lblHora.setFont(new Font("Tahoma", Font.PLAIN, 20));
-		lblHora.setBounds(343, 306, 56, 16);
+		lblHora.setBounds(294, 306, 105, 16);
 		frame.getContentPane().add(lblHora);
 		
 		textHora = new JTextField();
 		textHora.setFont(new Font("Tahoma", Font.PLAIN, 15));
 		textHora.setText("");
-		textHora.setBounds(405, 304, 132, 25);
+		textHora.setBounds(411, 304, 132, 25);
 		frame.getContentPane().add(textHora);
 		textHora.setColumns(10);
 		
@@ -137,5 +140,43 @@ public class TelaCadLeilao {
 		rdbtnFechado.setFont(new Font("Tahoma", Font.PLAIN, 20));
 		rdbtnFechado.setBounds(294, 250, 127, 25);
 		frame.getContentPane().add(rdbtnFechado);
+		
+		JLabel lblDataFinal = new JLabel("Data Final:");
+		lblDataFinal.setFont(new Font("Tahoma", Font.PLAIN, 20));
+		lblDataFinal.setBounds(29, 335, 105, 16);
+		frame.getContentPane().add(lblDataFinal);
+		
+		TxtDtFinal = new JTextField();
+		TxtDtFinal.setFont(new Font("Tahoma", Font.PLAIN, 15));
+		TxtDtFinal.setBounds(142, 335, 132, 22);
+		frame.getContentPane().add(TxtDtFinal);
+		TxtDtFinal.setColumns(10);
+		
+		JLabel lblHoraFinal = new JLabel("Hora Final:");
+		lblHoraFinal.setFont(new Font("Tahoma", Font.PLAIN, 20));
+		lblHoraFinal.setBounds(294, 338, 105, 16);
+		frame.getContentPane().add(lblHoraFinal);
+		
+		txtHrFinal = new JTextField();
+		txtHrFinal.setFont(new Font("Tahoma", Font.PLAIN, 15));
+		txtHrFinal.setBounds(411, 334, 132, 22);
+		frame.getContentPane().add(txtHrFinal);
+		txtHrFinal.setColumns(10);
+		
+		txtBens = new JTextField();
+		txtBens.setFont(new Font("Tahoma", Font.PLAIN, 15));
+		txtBens.setBounds(84, 60, 190, 22);
+		frame.getContentPane().add(txtBens);
+		txtBens.setColumns(10);
+		
+		JButton button = new JButton("+");
+		button.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				
+			}
+		});
+		button.setFont(new Font("Tahoma", Font.PLAIN, 20));
+		button.setBounds(294, 56, 56, 25);
+		frame.getContentPane().add(button);
 	}
 }
