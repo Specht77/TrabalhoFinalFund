@@ -21,10 +21,8 @@ public class TelaCadLeilao {
 	private JTextField textHora;
 	private JTextField TxtDtFinal;
 	private JTextField txtHrFinal;
-<<<<<<< HEAD
-=======
+
 	private JTextField txtBens;
->>>>>>> branch 'master' of https://github.com/Specht77/TrabalhoFinalFund.git
 
 	/**
 	 * Launch the application.
@@ -167,8 +165,7 @@ public class TelaCadLeilao {
 		txtHrFinal.setBounds(411, 334, 132, 22);
 		frame.getContentPane().add(txtHrFinal);
 		txtHrFinal.setColumns(10);
-<<<<<<< HEAD
-=======
+
 		
 		txtBens = new JTextField();
 		txtBens.setFont(new Font("Tahoma", Font.PLAIN, 15));
@@ -185,6 +182,5 @@ public class TelaCadLeilao {
 		button.setFont(new Font("Tahoma", Font.PLAIN, 20));
 		button.setBounds(294, 56, 56, 25);
 		frame.getContentPane().add(button);
->>>>>>> branch 'master' of https://github.com/Specht77/TrabalhoFinalFund.git
 	}
 }
