@@ -14,7 +14,6 @@ import java.awt.event.ActionEvent;
 public class TelaLeilaoAndamento {
 
 	private JFrame frame;
-	private JTextField textCod;
 	private JTextField textDtInicial;
 	private JTextField textHrInicial;
 	private JTextField textDtFinal;
@@ -23,6 +22,7 @@ public class TelaLeilaoAndamento {
 	private JTextField textVlInicial;
 	private JTextField textUtmLance;
 	private JTextField textLance;
+	private JTextField textCod;
 
 	/**
 	 * Launch the application.
@@ -82,24 +82,28 @@ public class TelaLeilaoAndamento {
 		frame.getContentPane().add(lblDataFinal);
 		
 		textCod = new JTextField();
+		textCod.setEditable(false);
 		textCod.setFont(new Font("Tahoma", Font.PLAIN, 15));
 		textCod.setBounds(90, 61, 116, 22);
 		frame.getContentPane().add(textCod);
 		textCod.setColumns(10);
 		
 		textDtInicial = new JTextField();
+		textDtInicial.setEditable(false);
 		textDtInicial.setFont(new Font("Tahoma", Font.PLAIN, 15));
 		textDtInicial.setBounds(155, 102, 116, 22);
 		frame.getContentPane().add(textDtInicial);
 		textDtInicial.setColumns(10);
 		
 		textHrInicial = new JTextField();
+		textHrInicial.setEditable(false);
 		textHrInicial.setFont(new Font("Tahoma", Font.PLAIN, 15));
 		textHrInicial.setBounds(425, 102, 116, 22);
 		frame.getContentPane().add(textHrInicial);
 		textHrInicial.setColumns(10);
 		
 		textDtFinal = new JTextField();
+		textDtFinal.setEditable(false);
 		textDtFinal.setFont(new Font("Tahoma", Font.PLAIN, 15));
 		textDtFinal.setBounds(155, 139, 116, 22);
 		frame.getContentPane().add(textDtFinal);
@@ -111,20 +115,21 @@ public class TelaLeilaoAndamento {
 		frame.getContentPane().add(lblHoraFinal);
 		
 		textHrFinal = new JTextField();
+		textHrFinal.setEditable(false);
 		textHrFinal.setFont(new Font("Tahoma", Font.PLAIN, 15));
 		textHrFinal.setBounds(425, 139, 116, 22);
 		frame.getContentPane().add(textHrFinal);
 		textHrFinal.setColumns(10);
 		
-		JLabel lblBens = new JLabel("Bens:");
-		lblBens.setFont(new Font("Tahoma", Font.PLAIN, 20));
-		lblBens.setBounds(42, 169, 56, 16);
-		frame.getContentPane().add(lblBens);
+		JLabel lblLotes = new JLabel("Lotes em andamento:");
+		lblLotes.setFont(new Font("Tahoma", Font.PLAIN, 20));
+		lblLotes.setBounds(42, 169, 229, 16);
+		frame.getContentPane().add(lblLotes);
 		
-		JTextArea textBens = new JTextArea();
-		textBens.setFont(new Font("Tahoma", Font.PLAIN, 15));
-		textBens.setBounds(42, 198, 499, 84);
-		frame.getContentPane().add(textBens);
+		JTextArea textLote = new JTextArea();
+		textLote.setFont(new Font("Tahoma", Font.PLAIN, 15));
+		textLote.setBounds(42, 198, 229, 84);
+		frame.getContentPane().add(textLote);
 		
 		JLabel lblUsaurio = new JLabel("Usu\u00E1rio:");
 		lblUsaurio.setFont(new Font("Tahoma", Font.PLAIN, 20));
@@ -132,6 +137,7 @@ public class TelaLeilaoAndamento {
 		frame.getContentPane().add(lblUsaurio);
 		
 		textUsu = new JTextField();
+		textUsu.setEditable(false);
 		textUsu.setFont(new Font("Tahoma", Font.PLAIN, 15));
 		textUsu.setBounds(121, 294, 204, 22);
 		frame.getContentPane().add(textUsu);
@@ -140,7 +146,7 @@ public class TelaLeilaoAndamento {
 		JButton btnCancelarLeilao = new JButton("Cancelar Leil\u00E3o");
 		btnCancelarLeilao.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
-				
+				/*realizar uma validação com if para verificar se o usúario é o dono do leilão*/
 			}
 		});
 		btnCancelarLeilao.setFont(new Font("Tahoma", Font.PLAIN, 20));
@@ -153,6 +159,7 @@ public class TelaLeilaoAndamento {
 		frame.getContentPane().add(lblValorInicial);
 		
 		textVlInicial = new JTextField();
+		textVlInicial.setEditable(false);
 		textVlInicial.setFont(new Font("Tahoma", Font.PLAIN, 15));
 		textVlInicial.setBounds(155, 324, 116, 22);
 		frame.getContentPane().add(textVlInicial);
@@ -164,6 +171,7 @@ public class TelaLeilaoAndamento {
 		frame.getContentPane().add(lblltimoLance);
 		
 		textUtmLance = new JTextField();
+		textUtmLance.setEditable(false);
 		textUtmLance.setFont(new Font("Tahoma", Font.PLAIN, 15));
 		textUtmLance.setBounds(412, 324, 129, 22);
 		frame.getContentPane().add(textUtmLance);
@@ -183,7 +191,7 @@ public class TelaLeilaoAndamento {
 		JButton btnConfirmarLance = new JButton("Confirmar lance");
 		btnConfirmarLance.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				
+				/*Verificar se o usuario pode dar lance, se ele for o dono do leilão não há anecessidade*/
 			}
 		});
 		btnConfirmarLance.setFont(new Font("Tahoma", Font.PLAIN, 20));
@@ -209,5 +217,16 @@ public class TelaLeilaoAndamento {
 		btnCancelar.setFont(new Font("Tahoma", Font.PLAIN, 20));
 		btnCancelar.setBounds(42, 416, 166, 25);
 		frame.getContentPane().add(btnCancelar);
+		
+		JTextArea txtLance = new JTextArea();
+		txtLance.setFont(new Font("Tahoma", Font.PLAIN, 15));
+		txtLance.setName("txtLoteEsco");
+		txtLance.setBounds(312, 198, 229, 83);
+		frame.getContentPane().add(txtLance);
+		
+		JLabel lblLotesEscolhidos = new JLabel("Lances dados:");
+		lblLotesEscolhidos.setFont(new Font("Tahoma", Font.PLAIN, 20));
+		lblLotesEscolhidos.setBounds(312, 169, 181, 16);
+		frame.getContentPane().add(lblLotesEscolhidos);
 	}
 }

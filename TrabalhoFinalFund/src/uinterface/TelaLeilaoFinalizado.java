@@ -8,6 +8,8 @@ import java.awt.Font;
 import javax.swing.JTextField;
 import javax.swing.JTextArea;
 import javax.swing.JButton;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
 
 public class TelaLeilaoFinalizado {
 
@@ -64,6 +66,7 @@ public class TelaLeilaoFinalizado {
 		frame.getContentPane().add(lblNewLabel);
 		
 		txtCod = new JTextField();
+		txtCod.setEditable(false);
 		txtCod.setFont(new Font("Tahoma", Font.PLAIN, 15));
 		txtCod.setBounds(76, 62, 116, 22);
 		frame.getContentPane().add(txtCod);
@@ -75,6 +78,7 @@ public class TelaLeilaoFinalizado {
 		frame.getContentPane().add(lblDataInicial);
 		
 		txtDTInicial = new JTextField();
+		txtDTInicial.setEditable(false);
 		txtDTInicial.setFont(new Font("Tahoma", Font.PLAIN, 15));
 		txtDTInicial.setBounds(144, 107, 116, 22);
 		frame.getContentPane().add(txtDTInicial);
@@ -86,6 +90,7 @@ public class TelaLeilaoFinalizado {
 		frame.getContentPane().add(lblHoraInicial);
 		
 		tctHRInicial = new JTextField();
+		tctHRInicial.setEditable(false);
 		tctHRInicial.setFont(new Font("Tahoma", Font.PLAIN, 15));
 		tctHRInicial.setBounds(416, 106, 116, 22);
 		frame.getContentPane().add(tctHRInicial);
@@ -97,6 +102,7 @@ public class TelaLeilaoFinalizado {
 		frame.getContentPane().add(lblNewLabel_1);
 		
 		txtFTFinal = new JTextField();
+		txtFTFinal.setEditable(false);
 		txtFTFinal.setFont(new Font("Tahoma", Font.PLAIN, 15));
 		txtFTFinal.setBounds(144, 142, 116, 22);
 		frame.getContentPane().add(txtFTFinal);
@@ -108,6 +114,7 @@ public class TelaLeilaoFinalizado {
 		frame.getContentPane().add(lblHoraFinal);
 		
 		txtHRFinal = new JTextField();
+		txtHRFinal.setEditable(false);
 		txtHRFinal.setFont(new Font("Tahoma", Font.PLAIN, 15));
 		txtHRFinal.setBounds(416, 146, 116, 22);
 		frame.getContentPane().add(txtHRFinal);
@@ -119,6 +126,7 @@ public class TelaLeilaoFinalizado {
 		frame.getContentPane().add(lblBens);
 		
 		JTextArea txtBens = new JTextArea();
+		txtBens.setEditable(false);
 		txtBens.setFont(new Font("Tahoma", Font.PLAIN, 15));
 		txtBens.setBounds(23, 212, 509, 88);
 		frame.getContentPane().add(txtBens);
@@ -129,6 +137,7 @@ public class TelaLeilaoFinalizado {
 		frame.getContentPane().add(lblUsaurio);
 		
 		txtUsuario = new JTextField();
+		txtUsuario.setEditable(false);
 		txtUsuario.setFont(new Font("Tahoma", Font.PLAIN, 15));
 		txtUsuario.setBounds(100, 312, 160, 22);
 		frame.getContentPane().add(txtUsuario);
@@ -140,6 +149,7 @@ public class TelaLeilaoFinalizado {
 		frame.getContentPane().add(lblValorInicial);
 		
 		txtValorInicial = new JTextField();
+		txtValorInicial.setEditable(false);
 		txtValorInicial.setFont(new Font("Tahoma", Font.PLAIN, 15));
 		txtValorInicial.setBounds(144, 342, 116, 22);
 		frame.getContentPane().add(txtValorInicial);
@@ -151,17 +161,28 @@ public class TelaLeilaoFinalizado {
 		frame.getContentPane().add(lblltimoLance);
 		
 		txtUltimoLance = new JTextField();
+		txtUltimoLance.setEditable(false);
 		txtUltimoLance.setFont(new Font("Tahoma", Font.PLAIN, 15));
 		txtUltimoLance.setBounds(416, 342, 116, 22);
 		frame.getContentPane().add(txtUltimoLance);
 		txtUltimoLance.setColumns(10);
 		
 		JButton btnCancelar = new JButton("Cancelar");
+		btnCancelar.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				
+			}
+		});
 		btnCancelar.setFont(new Font("Tahoma", Font.PLAIN, 20));
 		btnCancelar.setBounds(23, 390, 160, 25);
 		frame.getContentPane().add(btnCancelar);
 		
 		JButton btnConfirmar = new JButton("Confirmar");
+		btnConfirmar.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				
+			}
+		});
 		btnConfirmar.setFont(new Font("Tahoma", Font.PLAIN, 20));
 		btnConfirmar.setBounds(372, 390, 160, 25);
 		frame.getContentPane().add(btnConfirmar);

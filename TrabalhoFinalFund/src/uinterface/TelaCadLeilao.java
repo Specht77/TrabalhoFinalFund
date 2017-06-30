@@ -21,7 +21,6 @@ public class TelaCadLeilao {
 	private JTextField textHora;
 	private JTextField TxtDtFinal;
 	private JTextField txtHrFinal;
-	private JTextField txtBens;
 
 	/**
 	 * Launch the application.
@@ -111,6 +110,7 @@ public class TelaCadLeilao {
 		JButton btnCancelar = new JButton("Cancelar");
 		btnCancelar.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
+				
 			}
 		});
 		btnCancelar.setFont(new Font("Tahoma", Font.PLAIN, 20));
@@ -120,6 +120,7 @@ public class TelaCadLeilao {
 		JButton btnConfirmar = new JButton("Confirmar");
 		btnConfirmar.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
+				
 			}
 		});
 		btnConfirmar.setFont(new Font("Tahoma", Font.PLAIN, 20));
@@ -162,21 +163,5 @@ public class TelaCadLeilao {
 		txtHrFinal.setBounds(411, 334, 132, 22);
 		frame.getContentPane().add(txtHrFinal);
 		txtHrFinal.setColumns(10);
-		
-		txtBens = new JTextField();
-		txtBens.setFont(new Font("Tahoma", Font.PLAIN, 15));
-		txtBens.setBounds(84, 60, 190, 22);
-		frame.getContentPane().add(txtBens);
-		txtBens.setColumns(10);
-		
-		JButton button = new JButton("+");
-		button.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent arg0) {
-				
-			}
-		});
-		button.setFont(new Font("Tahoma", Font.PLAIN, 20));
-		button.setBounds(294, 56, 56, 25);
-		frame.getContentPane().add(button);
 	}
 }

@@ -8,6 +8,8 @@ import java.awt.Font;
 import javax.swing.JTextArea;
 import javax.swing.JComboBox;
 import javax.swing.JButton;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
 
 public class TelaCadBens {
 
@@ -82,11 +84,21 @@ public class TelaCadBens {
 		frame.getContentPane().add(CmbBoxCateg);
 		
 		JButton btnConfirmar = new JButton("Confirmar");
+		btnConfirmar.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				
+			}
+		});
 		btnConfirmar.setFont(new Font("Tahoma", Font.PLAIN, 20));
 		btnConfirmar.setBounds(12, 469, 143, 25);
 		frame.getContentPane().add(btnConfirmar);
 		
 		JButton btnCancelar = new JButton("Cancelar");
+		btnCancelar.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				
+			}
+		});
 		btnCancelar.setFont(new Font("Tahoma", Font.PLAIN, 20));
 		btnCancelar.setBounds(401, 469, 143, 25);
 		frame.getContentPane().add(btnCancelar);
