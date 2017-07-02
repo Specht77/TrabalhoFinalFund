@@ -104,5 +104,7 @@ public class TelaMenu {
 		lblMenu.setFont(new Font("Tahoma", Font.PLAIN, 25));
 		lblMenu.setBounds(169, 13, 109, 36);
 		frame.getContentPane().add(lblMenu);
+		
+		frame.setVisible(true);
 	}
 }

@@ -47,6 +47,8 @@ public class TelaCadUsu {
 	 * Initialize the contents of the frame.
 	 */
 	private void initialize() {
+		
+		
 		frame = new JFrame();
 		frame.setBounds(100, 100, 573, 419);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -103,7 +105,9 @@ public class TelaCadUsu {
 		JButton btnCancelar = new JButton("Cancelar");
 		btnCancelar.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				System.exit(0);
+				TelaMenu telamenu = new telamenu();
+				
+				frame.dispose();
 			}
 		});
 		btnCancelar.setFont(new Font("Tahoma", Font.PLAIN, 20));

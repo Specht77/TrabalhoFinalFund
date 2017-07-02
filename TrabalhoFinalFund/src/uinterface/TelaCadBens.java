@@ -99,7 +99,9 @@ public class TelaCadBens {
 		JButton btnCancelar = new JButton("Cancelar");
 		btnCancelar.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				System.exit(0);
+				TelaMenu telamenu = new telamenu();
+				
+				frame.dispose();
 			}
 		});
 		btnCancelar.setFont(new Font("Tahoma", Font.PLAIN, 20));
