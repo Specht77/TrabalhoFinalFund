@@ -8,6 +8,8 @@ import java.awt.Font;
 import javax.swing.JRadioButton;
 import javax.swing.JTextArea;
 import javax.swing.JButton;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
 
 public class TelaVisuLeilaoFinalizado {
 
@@ -90,13 +92,18 @@ public class TelaVisuLeilaoFinalizado {
 		frame.getContentPane().add(txtVisuLeilao);
 		
 		JButton btnCancelar = new JButton("Cancelar");
+		btnCancelar.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				System.exit(0);
+			}
+		});
 		btnCancelar.setFont(new Font("Tahoma", Font.PLAIN, 20));
-		btnCancelar.setBounds(34, 285, 150, 25);
+		btnCancelar.setBounds(348, 285, 150, 25);
 		frame.getContentPane().add(btnCancelar);
 		
 		JButton btnConfirmar = new JButton("Confirmar");
 		btnConfirmar.setFont(new Font("Tahoma", Font.PLAIN, 20));
-		btnConfirmar.setBounds(350, 285, 148, 25);
+		btnConfirmar.setBounds(36, 285, 148, 25);
 		frame.getContentPane().add(btnConfirmar);
 		
 	}

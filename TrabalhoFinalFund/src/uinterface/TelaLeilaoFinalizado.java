@@ -160,7 +160,7 @@ public class TelaLeilaoFinalizado {
 		lblltimoLance.setBounds(278, 345, 123, 16);
 		frame.getContentPane().add(lblltimoLance);
 		
-		txtUltimoLance = new JTextField();
+		txtUltimoLance = new JTextField();	
 		txtUltimoLance.setEditable(false);
 		txtUltimoLance.setFont(new Font("Tahoma", Font.PLAIN, 15));
 		txtUltimoLance.setBounds(416, 342, 116, 22);
@@ -170,11 +170,11 @@ public class TelaLeilaoFinalizado {
 		JButton btnCancelar = new JButton("Cancelar");
 		btnCancelar.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				
+				System.exit(0);
 			}
 		});
 		btnCancelar.setFont(new Font("Tahoma", Font.PLAIN, 20));
-		btnCancelar.setBounds(23, 390, 160, 25);
+		btnCancelar.setBounds(372, 390, 160, 25);
 		frame.getContentPane().add(btnCancelar);
 		
 		JButton btnConfirmar = new JButton("Confirmar");
@@ -184,7 +184,7 @@ public class TelaLeilaoFinalizado {
 			}
 		});
 		btnConfirmar.setFont(new Font("Tahoma", Font.PLAIN, 20));
-		btnConfirmar.setBounds(372, 390, 160, 25);
+		btnConfirmar.setBounds(23, 390, 160, 25);
 		frame.getContentPane().add(btnConfirmar);
 		
 		frame.setVisible(true);

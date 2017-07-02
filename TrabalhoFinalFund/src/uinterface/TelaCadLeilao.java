@@ -112,11 +112,11 @@ public class TelaCadLeilao {
 		JButton btnCancelar = new JButton("Cancelar");
 		btnCancelar.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				
+				System.exit(0);
 			}
 		});
 		btnCancelar.setFont(new Font("Tahoma", Font.PLAIN, 20));
-		btnCancelar.setBounds(48, 382, 172, 25);
+		btnCancelar.setBounds(468, 383, 172, 25);
 		frame.getContentPane().add(btnCancelar);
 		
 		JButton btnConfirmar = new JButton("Confirmar");
@@ -126,7 +126,7 @@ public class TelaCadLeilao {
 			}
 		});
 		btnConfirmar.setFont(new Font("Tahoma", Font.PLAIN, 20));
-		btnConfirmar.setBounds(441, 382, 172, 25);
+		btnConfirmar.setBounds(33, 383, 172, 25);
 		frame.getContentPane().add(btnConfirmar);
 		
 		JLabel lblLances = new JLabel("Lances:");

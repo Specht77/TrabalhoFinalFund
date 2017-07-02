@@ -205,17 +205,17 @@ public class TelaLeilaoAndamento {
 			}
 		});
 		btnConfirmar.setFont(new Font("Tahoma", Font.PLAIN, 20));
-		btnConfirmar.setBounds(375, 416, 166, 25);
+		btnConfirmar.setBounds(42, 416, 166, 25);
 		frame.getContentPane().add(btnConfirmar);
 		
 		JButton btnCancelar = new JButton("Cancelar");
 		btnCancelar.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				
+				System.exit(0);
 			}
 		});
 		btnCancelar.setFont(new Font("Tahoma", Font.PLAIN, 20));
-		btnCancelar.setBounds(42, 416, 166, 25);
+		btnCancelar.setBounds(375, 416, 166, 25);
 		frame.getContentPane().add(btnCancelar);
 		
 		JTextArea txtLance = new JTextArea();

@@ -90,17 +90,17 @@ public class TelaCadBens {
 			}
 		});
 		btnConfirmar.setFont(new Font("Tahoma", Font.PLAIN, 20));
-		btnConfirmar.setBounds(12, 469, 143, 25);
+		btnConfirmar.setBounds(12, 453, 143, 25);
 		frame.getContentPane().add(btnConfirmar);
 		
 		JButton btnCancelar = new JButton("Cancelar");
 		btnCancelar.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				
+				System.exit(0);
 			}
 		});
 		btnCancelar.setFont(new Font("Tahoma", Font.PLAIN, 20));
-		btnCancelar.setBounds(401, 469, 143, 25);
+		btnCancelar.setBounds(402, 453, 143, 25);
 		frame.getContentPane().add(btnCancelar);
 		
 		frame.setVisible(true);

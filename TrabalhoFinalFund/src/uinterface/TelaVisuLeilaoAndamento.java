@@ -95,11 +95,11 @@ public class TelaVisuLeilaoAndamento {
 		JButton btnCancelar = new JButton("Cancelar");
 		btnCancelar.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				
+				System.exit(0);
 			}
 		});
 		btnCancelar.setFont(new Font("Tahoma", Font.PLAIN, 20));
-		btnCancelar.setBounds(30, 306, 154, 25);
+		btnCancelar.setBounds(437, 306, 154, 25);
 		frame.getContentPane().add(btnCancelar);
 		
 		JButton btnConfirmar = new JButton("Confirmar");
@@ -109,7 +109,7 @@ public class TelaVisuLeilaoAndamento {
 			}
 		});
 		btnConfirmar.setFont(new Font("Tahoma", Font.PLAIN, 20));
-		btnConfirmar.setBounds(437, 306, 154, 25);
+		btnConfirmar.setBounds(30, 306, 154, 25);
 		frame.getContentPane().add(btnConfirmar);
 		
 		frame.setVisible(true);

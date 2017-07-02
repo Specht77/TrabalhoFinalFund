@@ -53,7 +53,9 @@ public class TelaVisuLeilao {
 		JButton btnLeiloEmAndamento = new JButton("Leil\u00F5es em Andamento");
 		btnLeiloEmAndamento.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
+				TelaVisuLeilaoAndamento leilaoAndamento = new TelaVisuLeilaoAndamento();
 				
+				frame.dispose();
 			}
 		});
 		btnLeiloEmAndamento.setFont(new Font("Tahoma", Font.PLAIN, 20));
@@ -63,7 +65,9 @@ public class TelaVisuLeilao {
 		JButton btnLeilesFinalizados = new JButton("Leil\u00F5es Finalizados");
 		btnLeilesFinalizados.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
+				TelaVisuLeilaoFinalizado visualizarFinalizado = new TelaVisuLeilaoFinalizado();
 				
+				frame.dispose();
 			}
 		});
 		btnLeilesFinalizados.setFont(new Font("Tahoma", Font.PLAIN, 20));
