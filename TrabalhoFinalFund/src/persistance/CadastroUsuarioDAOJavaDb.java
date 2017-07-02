@@ -32,8 +32,8 @@ public class CadastroUsuarioDAOJavaDb implements CadastroUsuarioDAO {
             Connection con = DriverManager.getConnection("jdbc:derby:derbyDB;create=true");
             Statement sta = con.createStatement();
             String sql = "CREATE TABLE usuarios ("
-                    + "NOME VARCHAR(100) NOT NULL PRIMARY KEY,"
-                    + "CPFCNPJ NUMBER(8) NOT NULL,"
+                    + "NOME VARCHAR(100) NOT NULL,"
+                    + "CPFCNPJ NUMBER(8) NOT NULL PRIMARY KEY,"
                     + "EMAIL VARCHAR(100) NOT NULL"
                     + ")";
             sta.executeUpdate(sql);
