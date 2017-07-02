@@ -8,7 +8,6 @@ import uinterface.TelaCadUsu;
 import uinterface.TelaVisuLeilao;
 
 import javax.swing.JFrame;
-import javax.swing.JTextField;
 import javax.swing.JButton;
 import java.awt.Font;
 import java.awt.event.ActionListener;

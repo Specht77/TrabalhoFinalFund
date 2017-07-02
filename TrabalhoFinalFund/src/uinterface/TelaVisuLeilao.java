@@ -2,6 +2,10 @@ package uinterface;
 
 import java.awt.EventQueue;
 
+import uinterface.TelaVisuLeilaoFinalizado;
+import uinterface.TelaVisuLeilaoAndamento;
+
+
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import java.awt.Font;

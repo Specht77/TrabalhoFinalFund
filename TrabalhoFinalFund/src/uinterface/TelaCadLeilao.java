@@ -2,6 +2,9 @@ package uinterface;
 
 import java.awt.EventQueue;
 
+import persistance.*;
+import business.*;
+
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import java.awt.Font;
