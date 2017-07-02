@@ -186,6 +186,8 @@ public class TelaLeilaoFinalizado {
 		btnConfirmar.setFont(new Font("Tahoma", Font.PLAIN, 20));
 		btnConfirmar.setBounds(372, 390, 160, 25);
 		frame.getContentPane().add(btnConfirmar);
+		
+		frame.setVisible(true);
 	}
 
 }

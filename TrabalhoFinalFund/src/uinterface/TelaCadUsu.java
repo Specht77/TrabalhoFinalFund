@@ -106,5 +106,10 @@ public class TelaCadUsu {
 		btnCancelar.setFont(new Font("Tahoma", Font.PLAIN, 20));
 		btnCancelar.setBounds(352, 301, 119, 25);
 		frame.getContentPane().add(btnCancelar);
+		
+		frame.setVisible(true);
 	}
+
+
+
 }

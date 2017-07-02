@@ -102,5 +102,7 @@ public class TelaCadBens {
 		btnCancelar.setFont(new Font("Tahoma", Font.PLAIN, 20));
 		btnCancelar.setBounds(401, 469, 143, 25);
 		frame.getContentPane().add(btnCancelar);
+		
+		frame.setVisible(true);
 	}
 }

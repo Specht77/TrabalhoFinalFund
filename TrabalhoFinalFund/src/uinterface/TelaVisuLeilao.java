@@ -69,6 +69,8 @@ public class TelaVisuLeilao {
 		btnLeilesFinalizados.setFont(new Font("Tahoma", Font.PLAIN, 20));
 		btnLeilesFinalizados.setBounds(57, 134, 257, 25);
 		frame.getContentPane().add(btnLeilesFinalizados);
+		
+		frame.setVisible(true);
 	}
 
 }

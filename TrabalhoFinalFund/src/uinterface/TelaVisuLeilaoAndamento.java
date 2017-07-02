@@ -111,5 +111,7 @@ public class TelaVisuLeilaoAndamento {
 		btnConfirmar.setFont(new Font("Tahoma", Font.PLAIN, 20));
 		btnConfirmar.setBounds(437, 306, 154, 25);
 		frame.getContentPane().add(btnConfirmar);
+		
+		frame.setVisible(true);
 	}
 }

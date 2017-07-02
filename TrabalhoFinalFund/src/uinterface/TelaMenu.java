@@ -2,6 +2,11 @@ package uinterface;
 
 import java.awt.EventQueue;
 
+import uinterface.TelaCadBens;
+import uinterface.TelaCadLeilao;
+import uinterface.TelaCadUsu;
+import uinterface.TelaVisuLeilao;
+
 import javax.swing.JFrame;
 import javax.swing.JTextField;
 import javax.swing.JButton;
@@ -49,8 +54,12 @@ public class TelaMenu {
 		JButton btnCadastrarUsuario = new JButton("Cadastrar Usu\u00E1rio");
 		btnCadastrarUsuario.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
+				TelaCadUsu cadastroUsuario = new TelaCadUsu();
 				
+				frame.dispose();
 			}
+
+
 		});
 		btnCadastrarUsuario.setFont(new Font("Tahoma", Font.PLAIN, 25));
 		btnCadastrarUsuario.setBounds(70, 76, 300, 45);
@@ -59,7 +68,9 @@ public class TelaMenu {
 		JButton btnCadastrarLeilao = new JButton("Cadastrar Leil\u00E3o");
 		btnCadastrarLeilao.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
+				TelaCadLeilao cadastrarLeilao = new TelaCadLeilao();
 				
+				frame.dispose();
 			}
 		});
 		btnCadastrarLeilao.setFont(new Font("Tahoma", Font.PLAIN, 25));
@@ -69,7 +80,9 @@ public class TelaMenu {
 		JButton btnCadastrarBens = new JButton("Cadastrar Bens");
 		btnCadastrarBens.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
+				TelaCadBens cadastroBens = new TelaCadBens();
 				
+				frame.dispose();
 			}
 		});
 		btnCadastrarBens.setFont(new Font("Tahoma", Font.PLAIN, 25));
@@ -79,7 +92,9 @@ public class TelaMenu {
 		JButton btnVisualizarLeiloes = new JButton("Visualizar Leil\u00F5es");
 		btnVisualizarLeiloes.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
+				TelaVisuLeilao visualizarLeiloes = new TelaVisuLeilao();
 				
+				frame.dispose();	
 			}
 		});
 		btnVisualizarLeiloes.setFont(new Font("Tahoma", Font.PLAIN, 25));

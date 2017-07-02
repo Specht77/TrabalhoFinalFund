@@ -39,7 +39,7 @@ public class TelaCadLeilao {
 			}
 		});
 	}
-
+	
 	/**
 	 * Create the application.
 	 */
@@ -182,5 +182,7 @@ public class TelaCadLeilao {
 		button.setFont(new Font("Tahoma", Font.PLAIN, 20));
 		button.setBounds(294, 56, 56, 25);
 		frame.getContentPane().add(button);
+		
+		frame.setVisible(true);
 	}
 }

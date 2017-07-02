@@ -228,5 +228,7 @@ public class TelaLeilaoAndamento {
 		lblLotesEscolhidos.setFont(new Font("Tahoma", Font.PLAIN, 20));
 		lblLotesEscolhidos.setBounds(312, 169, 181, 16);
 		frame.getContentPane().add(lblLotesEscolhidos);
+		
+		frame.setVisible(true);
 	}
 }
