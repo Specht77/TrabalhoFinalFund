@@ -15,10 +15,11 @@ import java.awt.event.ActionEvent;
 
 public class TelaCadUsu {
 
+	private static final String String = null;
 	private JFrame frame;
-	private JTextField TxrFNome;
-	private JTextField TxtFCPF;
-	private JTextField TxtFEmail;
+	private JTextField TxtNome;
+	private JTextField TxtCPF;
+	private JTextField TxtEmail;
 
 	/**
 	 * Launch the application.
@@ -45,9 +46,13 @@ public class TelaCadUsu {
 
 	/**
 	 * Initialize the contents of the frame.
+	 * @throws CadastroDAOException 
 	 */
-	private void initialize() {
+	private void initialize() throws CadastroDAOException {
 		
+		Usuario user = new Usuario(null, 0, null);
+		
+		UsuarioFachada usuFac = new UsuarioFachada();
 		
 		frame = new JFrame();
 		frame.setBounds(100, 100, 573, 419);
@@ -64,38 +69,58 @@ public class TelaCadUsu {
 		lblCadastroDeUsaurio.setBounds(149, 26, 243, 31);
 		frame.getContentPane().add(lblCadastroDeUsaurio);
 		
-		TxrFNome = new JTextField();
-		TxrFNome.setFont(new Font("Tahoma", Font.PLAIN, 15));
-		TxrFNome.setBounds(95, 100, 376, 22);
-		frame.getContentPane().add(TxrFNome);
-		TxrFNome.setColumns(10);
+		TxtNome = new JTextField();
+		TxtNome.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				lblNome.setText(null);
+			}
+		});
+		TxtNome.setFont(new Font("Tahoma", Font.PLAIN, 15));
+		TxtNome.setBounds(95, 100, 376, 22);
+		frame.getContentPane().add(TxtNome);
+		TxtNome.setColumns(10);
 		
 		JLabel lblCPFCNPJ = new JLabel("CPF / CNPJ:");
 		lblCPFCNPJ.setFont(new Font("Tahoma", Font.PLAIN, 20));
 		lblCPFCNPJ.setBounds(23, 158, 119, 16);
 		frame.getContentPane().add(lblCPFCNPJ);
 		
-		TxtFCPF = new JTextField();
-		TxtFCPF.setFont(new Font("Tahoma", Font.PLAIN, 15));
-		TxtFCPF.setBounds(130, 155, 341, 22);
-		frame.getContentPane().add(TxtFCPF);
-		TxtFCPF.setColumns(10);
+		TxtCPF = new JTextField();
+		TxtCPF.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				lblCPFCNPJ.setText(null);
+			}
+		});
+		TxtCPF.setFont(new Font("Tahoma", Font.PLAIN, 15));
+		TxtCPF.setBounds(130, 155, 341, 22);
+		frame.getContentPane().add(TxtCPF);
+		TxtCPF.setColumns(10);
 		
 		JLabel lblEmail = new JLabel("E-mail:");
 		lblEmail.setFont(new Font("Tahoma", Font.PLAIN, 20));
 		lblEmail.setBounds(23, 204, 71, 22);
 		frame.getContentPane().add(lblEmail);
 		
-		TxtFEmail = new JTextField();
-		TxtFEmail.setFont(new Font("Tahoma", Font.PLAIN, 15));
-		TxtFEmail.setBounds(95, 207, 376, 22);
-		frame.getContentPane().add(TxtFEmail);
-		TxtFEmail.setColumns(10);
+		TxtEmail = new JTextField();
+		TxtEmail.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				lblEmail.setText(null);
+			}
+		});
+		TxtEmail.setFont(new Font("Tahoma", Font.PLAIN, 15));
+		TxtEmail.setBounds(95, 207, 376, 22);
+		frame.getContentPane().add(TxtEmail);
+		TxtEmail.setColumns(10);
 		
 		JButton btnConfirmar = new JButton("Confirmar");
 		btnConfirmar.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				
+				int cpf = Integer.parseInt(TxtCPF.getText());
+				try {
+					usuFac.adicionarUsuario(TxtNome.getText(), cpf, TxtEmail.getText());
+				} catch (CadastroDAOException e1) {
+					e1.getMessage();
+				}
 			}
 		});
 		btnConfirmar.setFont(new Font("Tahoma", Font.PLAIN, 20));
@@ -105,8 +130,7 @@ public class TelaCadUsu {
 		JButton btnCancelar = new JButton("Cancelar");
 		btnCancelar.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				TelaMenu telamenu = new telamenu();
-				
+				TelaMenu menu = new TelaMenu();				
 				frame.dispose();
 			}
 		});

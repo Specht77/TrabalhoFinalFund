@@ -97,8 +97,7 @@ public class TelaVisuLeilaoFinalizado {
 		JButton btnCancelar = new JButton("Cancelar");
 		btnCancelar.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
-				TelaMenu telamenu = new telamenu();
-				
+				TelaVisuLeilao visualizarLeilao = new TelaVisuLeilao();				
 				frame.dispose();
 			}
 		});

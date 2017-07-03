@@ -99,7 +99,7 @@ public class TelaCadBens {
 		JButton btnCancelar = new JButton("Cancelar");
 		btnCancelar.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				TelaMenu telamenu = new telamenu();
+				TelaMenu menu = new TelaMenu();		
 				
 				frame.dispose();
 			}
