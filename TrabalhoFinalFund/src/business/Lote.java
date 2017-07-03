@@ -3,8 +3,8 @@ package business;
 public class Lote {
 	
 	private int valorLimite; 
-	/* Pode ser valor MINIMO ou MAXIMO conforme Leilão DEMANDA ou OFERTA:
-	 * " todo leilão possui um preço (mínimo ou máximo) associado ao lote."
+	/* Pode ser valor MINIMO ou MAXIMO conforme Leilï¿½o DEMANDA ou OFERTA:
+	 * " todo leilï¿½o possui um preï¿½o (mï¿½nimo ou mï¿½ximo) associado ao lote."
 	 * */
 	
 	
