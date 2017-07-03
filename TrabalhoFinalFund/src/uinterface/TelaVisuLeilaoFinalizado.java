@@ -110,6 +110,7 @@ public class TelaVisuLeilaoFinalizado {
 		btnConfirmar.setBounds(36, 285, 148, 25);
 		frame.getContentPane().add(btnConfirmar);
 		
+		frame.setVisible(true);
 	}
 
 }

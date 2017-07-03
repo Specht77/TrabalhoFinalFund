@@ -45,7 +45,7 @@ public class TelaVisuLeilao {
 	 */
 	private void initialize() {
 		frame = new JFrame();
-		frame.setBounds(100, 100, 388, 259);
+		frame.setBounds(100, 100, 388, 314);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.getContentPane().setLayout(null);
 		
@@ -69,7 +69,7 @@ public class TelaVisuLeilao {
 		JButton btnLeilesFinalizados = new JButton("Leil\u00F5es Finalizados");
 		btnLeilesFinalizados.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				TelaVisuLeilaoFinalizado visualizarFinalizado = new TelaVisuLeilaoFinalizado();
+				TelaVisuLeilaoFinalizado leilaoFinalizado = new TelaVisuLeilaoFinalizado();
 				
 				frame.dispose();
 			}
@@ -78,7 +78,17 @@ public class TelaVisuLeilao {
 		btnLeilesFinalizados.setBounds(57, 134, 257, 25);
 		frame.getContentPane().add(btnLeilesFinalizados);
 		
+		JButton btnRetornarAoMenu = new JButton("Retornar ao Menu");
+		btnRetornarAoMenu.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				TelaMenu menu = new TelaMenu();
+				frame.dispose();
+			}
+		});
+		btnRetornarAoMenu.setFont(new Font("Tahoma", Font.PLAIN, 20));
+		btnRetornarAoMenu.setBounds(57, 197, 257, 25);
+		frame.getContentPane().add(btnRetornarAoMenu);
+		
 		frame.setVisible(true);
 	}
-
 }
