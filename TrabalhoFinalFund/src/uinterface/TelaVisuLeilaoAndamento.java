@@ -61,11 +61,21 @@ public class TelaVisuLeilaoAndamento {
 		frame.getContentPane().add(lblLeilao);
 		
 		JRadioButton rdbtnFechado = new JRadioButton("Fechado");
+		rdbtnFechado.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				
+			}
+		});
 		rdbtnFechado.setFont(new Font("Tahoma", Font.PLAIN, 20));
 		rdbtnFechado.setBounds(135, 72, 127, 25);
 		frame.getContentPane().add(rdbtnFechado);
 		
 		JRadioButton rdbtnAberto = new JRadioButton("Aberto");
+		rdbtnAberto.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				
+			}
+		});
 		rdbtnAberto.setFont(new Font("Tahoma", Font.PLAIN, 20));
 		rdbtnAberto.setBounds(295, 72, 127, 25);
 		frame.getContentPane().add(rdbtnAberto);
@@ -76,11 +86,21 @@ public class TelaVisuLeilaoAndamento {
 		frame.getContentPane().add(lblLance);
 		
 		JRadioButton rdbtnDemanda = new JRadioButton("Demanda");
+		rdbtnDemanda.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				
+			}
+		});
 		rdbtnDemanda.setFont(new Font("Tahoma", Font.PLAIN, 20));
 		rdbtnDemanda.setBounds(135, 116, 127, 25);
 		frame.getContentPane().add(rdbtnDemanda);
 		
 		JRadioButton rdbtnOferta = new JRadioButton("Oferta");
+		rdbtnOferta.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				
+			}
+		});
 		rdbtnOferta.setFont(new Font("Tahoma", Font.PLAIN, 20));
 		rdbtnOferta.setBounds(295, 119, 127, 25);
 		frame.getContentPane().add(rdbtnOferta);
@@ -91,6 +111,11 @@ public class TelaVisuLeilaoAndamento {
 		frame.getContentPane().add(lblLeiloesEmAndamento);
 		
 		JTextArea txtLeilaoAndamento = new JTextArea();
+		txtLeilaoAndamento.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				
+			}
+		});
 		txtLeilaoAndamento.setFont(new Font("Tahoma", Font.PLAIN, 15));
 		txtLeilaoAndamento.setBounds(30, 237, 561, 107);
 		frame.getContentPane().add(txtLeilaoAndamento);
