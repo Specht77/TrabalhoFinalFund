@@ -10,6 +10,7 @@ import javax.swing.JLabel;
 import java.awt.Font;
 import javax.swing.JRadioButton;
 import javax.swing.JTextArea;
+import javax.swing.ButtonGroup;
 import javax.swing.JButton;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
@@ -45,6 +46,9 @@ public class TelaVisuLeilaoAndamento {
 	 * Initialize the contents of the frame.
 	 */
 	private void initialize() {
+		
+		
+		
 		frame = new JFrame();
 		frame.setBounds(100, 100, 662, 442);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -80,6 +84,10 @@ public class TelaVisuLeilaoAndamento {
 		rdbtnAberto.setBounds(295, 72, 127, 25);
 		frame.getContentPane().add(rdbtnAberto);
 		
+		ButtonGroup group = new ButtonGroup();
+		group.add(rdbtnFechado);
+		group.add(rdbtnAberto);
+		
 		JLabel lblLance = new JLabel("Lance:");
 		lblLance.setFont(new Font("Tahoma", Font.PLAIN, 20));
 		lblLance.setBounds(30, 117, 71, 16);
@@ -105,17 +113,16 @@ public class TelaVisuLeilaoAndamento {
 		rdbtnOferta.setBounds(295, 119, 127, 25);
 		frame.getContentPane().add(rdbtnOferta);
 		
+		ButtonGroup group1 = new ButtonGroup();
+		group1.add(rdbtnDemanda);
+		group1.add(rdbtnOferta);
+		
 		JLabel lblLeiloesEmAndamento = new JLabel("Leil\u00F5es em Andamento:");
 		lblLeiloesEmAndamento.setFont(new Font("Tahoma", Font.PLAIN, 20));
 		lblLeiloesEmAndamento.setBounds(30, 208, 232, 16);
 		frame.getContentPane().add(lblLeiloesEmAndamento);
 		
 		JTextArea txtLeilaoAndamento = new JTextArea();
-		txtLeilaoAndamento.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
-				
-			}
-		});
 		txtLeilaoAndamento.setFont(new Font("Tahoma", Font.PLAIN, 15));
 		txtLeilaoAndamento.setBounds(30, 237, 561, 107);
 		frame.getContentPane().add(txtLeilaoAndamento);

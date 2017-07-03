@@ -10,6 +10,7 @@ import javax.swing.JLabel;
 import java.awt.Font;
 import javax.swing.JRadioButton;
 import javax.swing.JTextArea;
+import javax.swing.ButtonGroup;
 import javax.swing.JButton;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
@@ -75,6 +76,10 @@ public class TelaVisuLeilaoFinalizado {
 		rdbtnFechado.setBounds(110, 70, 127, 25);
 		frame.getContentPane().add(rdbtnFechado);
 		
+		ButtonGroup group = new ButtonGroup();
+		group.add(rdbtnFechado);
+		group.add(rdbtnAberto);
+		
 		JRadioButton rdbtnDemanda = new JRadioButton("Demanda");
 		rdbtnDemanda.setFont(new Font("Tahoma", Font.PLAIN, 20));
 		rdbtnDemanda.setBounds(110, 107, 127, 25);
@@ -84,6 +89,10 @@ public class TelaVisuLeilaoFinalizado {
 		rdbtnOferta.setFont(new Font("Tahoma", Font.PLAIN, 20));
 		rdbtnOferta.setBounds(284, 107, 127, 25);
 		frame.getContentPane().add(rdbtnOferta);
+		
+		ButtonGroup group1 = new ButtonGroup();
+		group.add(rdbtnDemanda);
+		group.add(rdbtnOferta);
 		
 		JLabel lblVisualizarLeiloes = new JLabel("Visualizar leil\u00F5es:");
 		lblVisualizarLeiloes.setFont(new Font("Tahoma", Font.PLAIN, 20));
