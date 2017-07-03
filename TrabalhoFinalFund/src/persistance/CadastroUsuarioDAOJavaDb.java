@@ -22,7 +22,7 @@ public class CadastroUsuarioDAOJavaDb implements CadastroUsuarioDAO {
 	
 	private static void createDB() throws CadastroDAOException {
         try {
-            Connection con = DriverManager.getConnection("jdbc:derby:derbyDB;create=true");
+        	Connection con = DriverManager.getConnection("jdbc:derby:derbyDB;create=true");
             Statement sta = con.createStatement();
             String sql = "CREATE TABLE usuarios ("
                     + "NOME VARCHAR(100) NOT NULL,"
