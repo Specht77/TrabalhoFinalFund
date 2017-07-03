@@ -8,13 +8,13 @@ public class Leilao {
 	private boolean formato;
 	private Date abertura;
 	private Date fechamento;
-	Usuario usuario; //Essa instanciação do Usuário está correta?
+	private int usuario; //Essa instanciaï¿½ï¿½o do Usuï¿½rio estï¿½ correta?
 	//TODO
-	/* Gravar identificação do Usuário conforme enunciado:
-	 * "Todo leilão deve possuir a identificação do usuário vendedor
-(no caso de leilões de demanda) ou comprador (no caso de leilões de oferta)" */
+	/* Gravar identificaï¿½ï¿½o do Usuï¿½rio conforme enunciado:
+	 * "Todo leilï¿½o deve possuir a identificaï¿½ï¿½o do usuï¿½rio vendedor
+(no caso de leilï¿½es de demanda) ou comprador (no caso de leilï¿½es de oferta)" */
 	
-	public Leilao(boolean natureza, boolean formato, Date abertura, Date fechamento, Usuario usuario){
+	public Leilao(boolean natureza, boolean formato, Date abertura, Date fechamento, int usuario){
 		this.formato = formato;
 		this.abertura = abertura;
 		this.fechamento = fechamento;
@@ -61,6 +61,10 @@ public class Leilao {
 	
 	public boolean getNatureza() {
 		return natureza;
+	}
+	
+	public int getUsuario(){
+		return usuario;
 	}
 
 	

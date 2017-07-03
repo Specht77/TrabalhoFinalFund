@@ -26,7 +26,7 @@ public class BemFachada {
             }
             return null;
         } catch (CadastroDAOException e) {
-            throw new CadastroDAOException("Falha ao adicionar usuario!", e);
+            throw new CadastroDAOException("Falha ao adicionar bem!", e);
         }
     }
 
@@ -34,7 +34,7 @@ public class BemFachada {
         try{
             return dao.getBens();
         } catch(CadastroDAOException e) {
-            throw new CadastroDAOException("Falha ao buscar usuario", e);
+            throw new CadastroDAOException("Falha ao buscar bem", e);
         }
     }
 }
