@@ -19,12 +19,12 @@ public class CadastroUsuarioDAOJavaDb implements CadastroUsuarioDAO {
             throw new CadastroDAOException("JdbcOdbDriver not found!!");
         }
         
-        try {
-            createDB();
-        } catch (Exception ex) {
-            System.out.println("Problemas para criar o banco: "+ex.getMessage());
-            System.exit(0);
-        }
+   //     try {
+   //         createDB();
+   //     } catch (Exception ex) {
+   //         System.out.println("Problemas para criar o banco: "+ex.getMessage());
+    //        System.exit(0);
+    //    }
     }
 	
 	private static void createDB() throws CadastroDAOException {
