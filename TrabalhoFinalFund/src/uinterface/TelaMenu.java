@@ -14,6 +14,8 @@ import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 import javax.swing.JLabel;
 
+import persistance.CadastroDAOException;
+
 public class TelaMenu {
 
 	private JFrame frame;
@@ -53,7 +55,12 @@ public class TelaMenu {
 		JButton btnCadastrarUsuario = new JButton("Cadastrar Usu\u00E1rio");
 		btnCadastrarUsuario.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
-				TelaCadUsu cadastroUsuario = new TelaCadUsu();
+				try {
+					TelaCadUsu cadastroUsuario = new TelaCadUsu();
+				} catch (CadastroDAOException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
 				
 				frame.dispose();
 			}

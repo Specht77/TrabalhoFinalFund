@@ -39,8 +39,9 @@ public class TelaCadUsu {
 
 	/**
 	 * Create the application.
+	 * @throws CadastroDAOException 
 	 */
-	public TelaCadUsu() {
+	public TelaCadUsu() throws CadastroDAOException {
 		initialize();
 	}
 
