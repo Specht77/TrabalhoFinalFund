@@ -19,12 +19,21 @@ public class CadastroUsuarioDAOJavaDb implements CadastroUsuarioDAO {
             throw new CadastroDAOException("JdbcOdbDriver not found!!");
         }
         
+<<<<<<< HEAD
        try {
             createDB();
         } catch (Exception ex) {
             System.out.println("Problemas para criar o banco: "+ex.getMessage());
             System.exit(0);
         }
+=======
+   //     try {
+   //         createDB();
+   //     } catch (Exception ex) {
+   //         System.out.println("Problemas para criar o banco: "+ex.getMessage());
+    //        System.exit(0);
+    //    }
+>>>>>>> branch 'master' of https://github.com/Specht77/TrabalhoFinalFund.git
     }
 	
 	private static void createDB() throws CadastroDAOException {
